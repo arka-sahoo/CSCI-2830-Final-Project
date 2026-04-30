@@ -11,6 +11,9 @@ import javafx.stage.Stage;
 
 import java.io.*;
 
+/**
+ * JavaFX GUI for Student Management System
+ */
 public class App extends Application {
 
     private List<Student> students =new ArrayList<>();
@@ -18,12 +21,16 @@ public class App extends Application {
 
     private static final String fileName = "Student.txt";
 
+    /**
+     * Entrypoint for the JavaFX application
+     */
     @Override
     public void start(Stage stage) {
 
         students = loadFromTheFile();
         manager = new StudentManager(students);
 
+        // Input Fields
         TextField fieldId = new TextField();
         fieldId.setPromptText("ID: ");
 
@@ -33,9 +40,11 @@ public class App extends Application {
         TextField fieldGpa = new TextField();
         fieldGpa.setPromptText("GPA: ");
 
+        // Buttons
         Button addButton = new Button("Add");
         Button removeButton = new Button("Remove");
 
+        // Add button action
         addButton.setOnAction(e -> {
             try {
                 int id = Integer.parseInt(fieldId.getText());
@@ -54,6 +63,7 @@ public class App extends Application {
             }
         });
 
+        // Remove button action
         removeButton.setOnAction(e -> {
             try {
                 int id = Integer.parseInt(fieldId.getText());
@@ -68,6 +78,7 @@ public class App extends Application {
             }
         });
 
+        // Layout
         VBox root = new VBox(10, fieldId, fieldName, fieldGpa, addButton, removeButton);
         Scene scene = new Scene(root, 350, 450);
         stage.setTitle("Student Management System");
@@ -116,6 +127,10 @@ public class App extends Application {
         throw new UnsupportedOperationException("Unimplemented method 'showError'");
     }
 
+    /**
+     * Main method to launch app
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }

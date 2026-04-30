@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * Unit tesst for Adding student functionality
+ */
 public class AddStudentTest {
     @Test
     void testAddStudent() throws Exception {

@@ -4,6 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+/**
+ * Unit test for Removing student functionality
+ */
 public class RemoveStudentTest {
     @Test
     void testRemoveStudent() throws Exception {
