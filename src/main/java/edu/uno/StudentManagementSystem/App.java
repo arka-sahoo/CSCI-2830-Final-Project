@@ -31,14 +31,14 @@ public class App extends Application {
         manager = new StudentManager(students);
 
         // Input Fields
-        TextField fieldId = new TextField();
-        fieldId.setPromptText("ID: "); // Input Field for id
+        TextField fieldId = new TextField(); // Input Field for id
+        fieldId.setPromptText("ID: "); 
 
-        TextField fieldName = new TextField();
-        fieldName.setPromptText("Name: "); // Input Field for name
+        TextField fieldName = new TextField(); // Input Field for name
+        fieldName.setPromptText("Name: "); 
 
-        TextField fieldGpa = new TextField();
-        fieldGpa.setPromptText("GPA: "); // Input Field for GPA
+        TextField fieldGpa = new TextField(); // Input Field for GPA
+        fieldGpa.setPromptText("GPA: "); 
 
         // Buttons
         Button addButton = new Button("Add"); // Add button
