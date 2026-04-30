@@ -76,6 +76,9 @@ public class App extends Application {
         stage.setOnCloseRequest(e -> saveToTheFile());
     }
 
+    /**
+     * Saves students to file
+     */
     private void saveToTheFile() { // Method to save student details to the file
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
         for (Student s : manager.getStudents()) {
@@ -87,6 +90,10 @@ public class App extends Application {
     }
     }
 
+    /**
+     * Loads students from file
+     * @return student list
+     */
     private List<Student> loadFromTheFile() { // Method to load student details from the file
         List<Student> list = new ArrayList<>();
         File file = new File(fileName);
