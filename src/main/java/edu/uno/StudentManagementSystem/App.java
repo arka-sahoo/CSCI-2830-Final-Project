@@ -32,17 +32,17 @@ public class App extends Application {
 
         // Input Fields
         TextField fieldId = new TextField();
-        fieldId.setPromptText("ID: ");
+        fieldId.setPromptText("ID: "); // Input Field for id
 
         TextField fieldName = new TextField();
-        fieldName.setPromptText("Name: ");
+        fieldName.setPromptText("Name: "); // Input Field for name
 
         TextField fieldGpa = new TextField();
-        fieldGpa.setPromptText("GPA: ");
+        fieldGpa.setPromptText("GPA: "); // Input Field for GPA
 
         // Buttons
-        Button addButton = new Button("Add");
-        Button removeButton = new Button("Remove");
+        Button addButton = new Button("Add"); // Add button
+        Button removeButton = new Button("Remove"); // Remove button
 
         // Add button action
         addButton.setOnAction(e -> {
