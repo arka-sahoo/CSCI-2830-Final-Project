@@ -103,7 +103,7 @@ public class App extends Application {
 
     /**
      * Loads students from file
-     * @return student list
+     * @return Student list
      */
     private List<Student> loadFromTheFile() { // Method to load student details from the file
         List<Student> list = new ArrayList<>();
