@@ -20,7 +20,7 @@ public class Student {
     public Student(int id) {
     }
 
-    /** Getter for id */
+    /**Getter for id */
     public int getId() {
         return id;
     }
