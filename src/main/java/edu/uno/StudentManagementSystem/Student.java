@@ -11,7 +11,6 @@ public class Student {
      * @param name The student name
      * @param gpa The student gpa
      */
-
     public Student(int id, String name, double gpa) {
         this.id = id;
         this.name = name;
